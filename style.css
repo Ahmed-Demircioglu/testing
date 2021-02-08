@@ -1,0 +1,275 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(32, 32, 32);
+    
+ }
+
+
+ button{
+    font-family: 'Poppins', sans-serif;
+ }
+
+ header{
+     display: flex;
+     width: 90%;
+    height: 10vh;
+     margin: auto;
+     align-items: center;
+     
+ }
+
+.logo-container,.nav-links,.cart {
+    display: flex;
+}
+ .logo-container {
+
+flex: 1;
+ }
+ .logo-container img{
+    padding: 0%;
+    display: flex;
+    height: 8vh;
+
+}
+ 
+.logo{
+    font-weight: 500;
+    margin: 5px;
+    color:  #5f5f79;
+    
+}
+nav {
+
+flex: 2;
+}
+.nav-links{
+     justify-content: space-around;
+     list-style: none;
+   
+}
+.nav-link{
+
+    color: #fc801a;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+
+
+.presentation{
+    
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 50vh;
+    align-items: center;
+    
+}
+.introduction{
+  
+    flex: 1;
+
+}
+
+
+.intro-text h1 {
+
+    font-size: 50px;
+    font-weight: 300;
+    background: linear-gradient(to right, #ffffff,#726f89);
+    -webkit-background-clip: text;/* this 2 webkit lines are to make the font transparent color*/
+    -webkit-text-fill-color: transparent;
+
+    /*
+    position: absolute;
+    left: 180px;
+    top: 300px;
+    */
+
+
+    /*i did this ok too. this one for positioning the paragraph*/
+
+}
+
+.intro-text p{
+    font-weight: 200;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #a7a7a8;
+}
+.cta{
+    position: relative;
+    
+    padding: 50px 0px 0px 0px;/* go colckwise (top right bottom left) */
+}
+.btn1{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    margin: 5px 0px 0px 5px;
+    border: 2px solid #56fa95;
+    background: transparent;
+    color: #56fa95;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+
+
+
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 70vh; 
+    /*
+    height: 100px;
+    width: 100px;
+    */
+   /* background-color: blue;*/
+
+
+    /*i did this line ok   */
+}
+
+.cover img {
+    margin: 10% 0% 0% 0%;
+    height: 100%;
+    filter: drop-shadow(-15px 15px 10px ); /* this line filter and using drop shadow adds shadow to the img and the numbers (left, bottom, edges).*/
+    animation: drop 1.5s ease;
+    /*
+    position: absolute;*//*i did this ok. this one is img positioning  */
+   /*right: 200px;*/  /*this one too  */
+   /* top: 200px; */  /*yup you guessed it this one either   */
+    
+}
+.big-circle{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -1; /* changes the img layer (-1) back (1) front*/
+    opacity: 0.5;
+    height: 80%;
+}
+
+.mid-circle{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1; /* changes the img layer (-1) back (1) front*/
+    
+    height: 60%;
+}
+.small-circle{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -2; /* changes the img layer (-1) back (1) front*/
+    
+    height: 40%;
+}
+
+.raptor-select{
+    position: absolute;
+    width: 12%;
+    display: flex;
+    justify-content: space-around;
+    right: 21.5%;
+    top: 90%;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateX(50%);
+        
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+        
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .presentation{
+        flex-direction: column;
+        
+        height: 100vh;
+        align-items: center;
+    }
+
+    .introduction{
+        margin-top: 2vh;
+        text-align: center;
+        align-items: center;
+        width: 350px;
+        
+        
+    }
+    .intro-text h1 {
+        font-size: 17px;
+
+    }
+    .intro-text p {
+        font-size: 13.5px;
+
+    }
+
+    .cta{
+        position: absolute;
+        bottom: 0px;
+        left: 36%;
+        margin: 10px 0px 5px 0px;
+        
+
+    }
+    .raptor-select{
+        position: absolute;
+        top: 10px;
+        right: 240px;
+        width: 20%;
+        height: 2%;
+        transform: translate(50%, 150%);/*(x,y)*/
+
+    }
+
+    .cover img {
+        position: absolute;
+        top: 35%;
+        height: 45%;
+        margin: 12% 0% 0% 0%;
+    }
+
+    .nav-link{
+        font-size: 13px;
+    }
+
+    .logo-container img {
+
+        width: 25%;
+        transform: translate(-50%,5%);
+    }
+    .logo-container h4 {
+        font-size: 13px;
+        transform: translate(-25%,10%);
+    }
+
+}
+/* for more modefication for more smaller screens or systems, 
+just add a new "@media screen and (max-width: -add number of pixles required here-px)"
+put smaller screen pxs and add new modefications
+*/
+

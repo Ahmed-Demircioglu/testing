@@ -1,0 +1,868 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+    
+}
+
+@media screen and (max-width: 1920px){
+/* start\ add background image*/
+/*
+.background-container{
+    background-image: url(./img/back1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+*/
+/*end*/
+.name{
+    font-family: 'Changa', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    
+ }
+
+
+ button{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    
+ }
+ button:hover{
+    background-color: #fad3f5c7;
+}
+
+ header{
+    
+    display: flex;
+    width: 90%;
+   height: 12vh;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.logo-container,.nav-links {
+    display: flex;
+}
+ .logo-container {
+    flex: 1;
+ }
+ .logo-container img{
+     padding: 0%;
+     display: flex;
+     height: 8vh;
+
+ }
+ 
+.logo{
+    font-weight: 500;
+    margin: 5px;
+    color:  #353536;
+    /*Not in use */
+}
+
+nav {
+
+    flex: 2;
+    }
+
+.nav-links{
+        justify-content: space-around;
+        list-style: none;
+        
+      
+}   
+.nav-link{
+
+    color: rgb(29, 29, 28);
+    font-size: 18px;
+    text-decoration: none;
+
+}
+.home-btn {
+   
+    border: 1px solid  #fc801a;
+    background: transparent;
+    color: #fc801a;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.about-me-btn{
+    border: 1px solid  #fc801a;
+    background: transparent;
+    color: #fc801a;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.contact-btn{
+    border: 1px solid  #fc801a;
+    background: transparent;
+    color: #fc801a;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.presentation{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    min-height: 70vh;
+    align-items: center;
+}
+.introduction{
+    
+    flex: 1;
+
+}
+.name h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: 300;
+    color: #353536;
+    /*
+    filter: drop-shadow(-20px 15px 5px rgb(247, 148, 68));
+    */
+    /*not in use */
+}
+.name img {
+    
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    z-index: +1;
+    height: 5vh;
+    
+}
+.about-me-container{
+   
+    padding: 5% 5% 5% 5%;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.proflie-img img{
+    position: absolute;
+    height: 25vh;
+    top: 5%;
+    right:10%;
+    
+
+    
+}
+.dashboard{
+    
+    border-radius: 10px;
+    height: 75vh;
+    width: 90vw;
+    padding: 10% 5% 5% 1%;
+    
+}
+.board img{
+    
+    padding: 1% 0% 0% 1%;
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    height: 95%;
+    width:84vw;
+    z-index: -1;
+    
+    
+}
+.programimg-langs h2{
+    position: absolute;
+    padding-left: 30px;
+    top: 22%;
+    left: 9%;
+    font-size: 35px;
+    font-weight: 400;
+    color: #353536;
+}
+
+.programimg-langs img{
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    margin: 3% 0% 0% 3%;
+    padding-left: 30px;
+    height: 25vh;
+    width: 20%;
+}
+.computer-skills h2{
+    position: absolute;
+    padding-left: 30px;
+    bottom: 40%;
+    left: 9%;
+    font-size: 35px;
+    font-weight: 400;
+    color: #353536;
+}
+.computer-skills img{
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    padding-left: 30px;
+    height: 35%;
+    width: 25%;
+    
+}
+.professions{
+    margin: 0 auto;
+    
+    position: absolute;
+    top: 22%;
+    left: 34%;
+    
+    width: 23vw;
+
+}
+.professions h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #353536;
+}
+.professions h3{
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: 300;
+    color: #353536;
+}
+.professions p{
+    margin-top: 10%;
+    font-size: 30px;
+    font-weight: 300;
+    color: #353536;
+}
+.about-me-text{
+    
+    margin: 0 auto;
+    
+    width: 23vw;
+    position: absolute;
+    top: 22%;
+    right: 18%;
+}
+
+.about-me-text h2{
+    
+    font-size: 35px;
+    font-weight: 400;
+    color:  #353536;
+}
+
+.about-me-text p{
+    scale: 2;
+    font-weight: 300;
+    margin-top: 15%;
+    font-size: 30px;
+    color:  #353536;
+}
+
+
+.my-img img{
+   display: none;
+    position: absolute;
+    bottom: 9px;
+    right: 0%;
+    flex: 1;
+    display: flex;
+    margin: 0% 0% 0% 0%;
+    height: 95vh;
+    z-index: -1;
+    
+}
+
+/* start / testing this btn with different methods*/
+.btn{
+    margin: 5% 0% 0% 40%;
+    border: 1px solid  #fc801a;
+    background: transparent;
+    color: #fc801a;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}/*End btn*/
+}
+/* responsivnees*/
+/*Res 1440*/
+@media screen and (max-width: 1440px){
+    header{
+        
+       height: 10vh;
+       
+     }
+     .home-btn {
+   
+       
+        width: 90px;
+        height: 23px;
+        font-size: 13px;
+    }
+    
+    
+    .about-me-btn{
+       
+        width: 90px;
+        height: 23px;
+       
+        font-size: 13px;
+    }
+    .contact-btn{
+        
+        width: 90px;
+        height: 23px;
+        font-size: 13px;
+    }
+    
+    .about-me-container{
+        
+        height: 88vh;
+       
+    }
+    .proflie-img img{
+        
+        height: 28vh;
+        top: 5%;
+        right:3%;
+        }
+    .dashboard{
+        height: 70vh;
+        width: 100%;
+         }
+    .board img{  
+        height: 85%;
+        width:1300px;
+       }
+    .programimg-langs h2{
+       
+        font-size: 25px;
+        padding-left: 18px;
+        
+    }
+    .programimg-langs img{
+        
+       
+       
+        height: 23vh;
+        width: 20%;
+    }
+    .computer-skills h2{
+       
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    .computer-skills img{
+       
+         height: 28%;
+        }
+    .professions{
+    
+        top: 20%;
+        left: 35%;
+        width: 22%;
+    
+    }
+    .professions h2{
+        font-size: 28px;
+        
+    }
+    .professions h3{
+        
+        font-size: 23px;
+       
+    }
+    .professions p{
+       
+        font-size: 20px;
+        
+    }
+    .about-me-text{
+    
+    
+    
+        width: 23%;
+        top: 20%;
+        right: 18%;
+    }
+    
+    .about-me-text h2{
+        
+        font-size: 28px;
+       
+    }
+    
+    .about-me-text p{
+        
+        font-size: 20px;
+        margin-top: 10%;
+    }
+    /* not done yet edit pog img and skill imgs*/
+   
+
+
+
+}
+/*Res 1280*/
+@media screen and (max-width: 1280px){
+
+    header{
+        
+        width: 100%;
+    }
+
+    .logo-container img{
+        padding: 3% 0% 0% 10%;
+        
+    }
+    .about-me-container{
+        
+        height: 70vh;
+    }
+    .proflie-img img{
+       
+        height: 25vh;
+        top: 0%;
+        right:2%;
+    }
+
+    .board img{
+        
+        height: 100%;
+        width: 90vw;   
+    }
+    .programimg-langs h2{
+       
+        font-size: 25px;
+        padding-left: 25px;
+        
+    }
+    .computer-skills h2{
+       
+        padding-left: 35px;
+        font-size: 25px;
+    }
+    .professions h2{
+        font-size: 25px;
+        
+    }
+    .professions h3{
+        font-size:20px;
+    }
+    .professions p{
+        font-size: 20px;
+    }
+    .about-me-text h2{
+    
+        font-size: 25px;
+        
+    }
+    .about-me-text p{
+        font-size: 20px;
+    }
+    .my-img img{
+   
+        position: absolute;
+        bottom: 0px;
+        right: px;
+        height: 100vh;
+        
+    }
+}
+@media screen and (max-width: 1000px){
+
+    .home-btn{
+   
+        border: none;
+       
+    }
+    
+    .about-me-btn{
+        border: none;
+        
+    }
+    .contact-btn{
+        border: none;
+       
+    }
+
+
+    .about-me-container{
+       
+      
+        height: 190vh;
+    }  
+    .proflie-img img{
+        
+        height: 25vh;
+        top: 5%;
+        right:25%;
+    }
+
+    .name img {
+           
+            top: 45%;
+            left: 10%;
+            height: 4vh;
+    }
+    .board img{
+    
+       display: none;
+        
+        
+    }
+    .my-img img{
+        display: none;
+    }
+
+     .programimg-langs h2{
+            
+            top: 1370px;
+            left: 5%;
+            font-size: 25px;
+           
+    }
+        
+    .programimg-langs img{
+        
+            top: 1360px;
+            left: 3%;
+            height: 25vh;
+            width: 80%;
+    }
+        
+    .computer-skills h2{
+           
+            top: 1100px;
+            left: 10%;
+            font-size: 30px;
+    }
+    .computer-skills img{
+           
+            top: 1150px;
+            left: 2%;
+           
+            height: 25vh;
+            width: 100%;
+            
+    }
+    .professions{
+       
+        top: 750px;
+        left: 10%;
+        
+        width: 80vw;
+    
+    }
+    .professions h2{
+        font-size: 25px;
+        
+    }
+    .professions h3{
+        margin-top: 2%;
+        font-size: 18px;
+        
+    }
+    .professions p{
+        margin-top: 5%;
+        font-size: 18px;
+       
+    }
+    .about-me-text{
+    
+        width: 75vw;
+        
+        top: 25%;
+        right: 14%;
+    }
+    
+    .about-me-text h2{
+        
+        font-size: 25px;
+        
+        
+    }
+    
+    .about-me-text p{
+       
+        
+        margin-top: 5%;
+        font-size: 18px;
+        
+    }
+    
+    
+
+}
+@media screen and (max-width: 1024px){
+.home-btn{
+   
+    border: none;
+   
+}
+
+.about-me-btn{
+    border: none;
+    
+}
+.contact-btn{
+    border: none;
+   
+}
+
+
+.about-me-container{
+   
+  
+    height: 190vh;
+}  
+.proflie-img img{
+    
+    height: 25vh;
+    top: 5%;
+    right:25%;
+}
+
+.name img {
+       
+        top: 45%;
+        left: 10%;
+        height: 4vh;
+}
+.board img{
+
+   display: none;
+    
+    
+}
+.my-img img{
+    display: none;
+}
+
+ .programimg-langs h2{
+        
+        top: 1370px;
+        left: 5%;
+        font-size: 25px;
+       
+}
+    
+.programimg-langs img{
+    
+        top: 1360px;
+        left: 3%;
+        height: 25vh;
+        width: 80%;
+}
+    
+.computer-skills h2{
+       
+        top: 1100px;
+        left: 10%;
+        font-size: 30px;
+}
+.computer-skills img{
+       
+        top: 1150px;
+        left: 2%;
+       
+        height: 25vh;
+        width: 100%;
+        
+}
+.professions{
+   
+    top: 750px;
+    left: 10%;
+    
+    width: 80vw;
+
+}
+.professions h2{
+    font-size: 25px;
+    
+}
+.professions h3{
+    margin-top: 2%;
+    font-size: 18px;
+    
+}
+.professions p{
+    margin-top: 5%;
+    font-size: 18px;
+   
+}
+.about-me-text{
+
+    width: 75vw;
+    
+    top: 25%;
+    right: 14%;
+}
+
+.about-me-text h2{
+    
+    font-size: 25px;
+    
+    
+}
+
+.about-me-text p{
+   
+    
+    margin-top: 5%;
+    font-size: 18px;
+    
+}
+}
+
+
+
+
+/*risponsiv 375px iphoneX */
+@media screen and (max-width: 375px){
+  
+    .home-btn{
+   
+        border: none;
+       
+    }
+    
+    .about-me-btn{
+        border: none;
+        
+    }
+    .contact-btn{
+        border: none;
+       
+    }
+
+
+    .about-me-container{
+       
+      
+        height: 190vh;
+    }  
+    .proflie-img img{
+        
+        height: 25vh;
+        top: 5%;
+        right:25%;
+    }
+
+    .name img {
+           
+            top: 45%;
+            left: 10%;
+            height: 4vh;
+    }
+    .board img{
+    
+       display: none;
+        
+        
+    }
+    .my-img img{
+        display: none;
+    }
+
+     .programimg-langs h2{
+            
+            top: 1370px;
+            left: 5%;
+            font-size: 25px;
+           
+    }
+        
+    .programimg-langs img{
+        
+            top: 1360px;
+            left: 3%;
+            height: 25vh;
+            width: 80%;
+    }
+        
+    .computer-skills h2{
+           
+            top: 1100px;
+            left: 10%;
+            font-size: 30px;
+    }
+    .computer-skills img{
+           
+            top: 1150px;
+            left: 2%;
+           
+            height: 25vh;
+            width: 100%;
+            
+    }
+    .professions{
+       
+        top: 750px;
+        left: 10%;
+        
+        width: 80vw;
+    
+    }
+    .professions h2{
+        font-size: 25px;
+        
+    }
+    .professions h3{
+        margin-top: 2%;
+        font-size: 18px;
+        
+    }
+    .professions p{
+        margin-top: 5%;
+        font-size: 18px;
+       
+    }
+    .about-me-text{
+    
+        width: 75vw;
+        
+        top: 25%;
+        right: 14%;
+    }
+    
+    .about-me-text h2{
+        
+        font-size: 25px;
+        
+        
+    }
+    
+    .about-me-text p{
+       
+        
+        margin-top: 5%;
+        font-size: 18px;
+        
+    }
+    
+    
+
+
+}

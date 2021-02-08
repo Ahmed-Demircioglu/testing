@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+/* start\ add background image*/
+.background-img-container{
+    background-image: url(./img/back3.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+/*end*/
+.name{
+    font-family: 'Changa', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    
+ }
+
+
+ button{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+ }
+ button:hover{
+     background-color: #fc801a4f;
+ }
+
+ header{
+    
+    display: flex;
+    width: 90%;
+   height: 10vh;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.logo-container,.nav-links {
+    display: flex;
+}
+ .logo-container {
+    flex: 1;
+ }
+ .logo-container img{
+     padding: 0%;
+     display: flex;
+     height: 8vh;
+
+ }
+ 
+.logo{
+    font-weight: 500;
+    margin: 5px;
+    color:  #353536;
+    
+}
+
+nav {
+
+    flex: 2;
+    }
+
+.nav-links{
+        justify-content: space-around;
+        list-style: none;
+        
+      
+}   
+.nav-link{
+
+    color: rgb(29, 29, 28);
+    font-size: 18px;
+    text-decoration: none;
+
+}
+.home-btn{
+   
+    border: 1px solid  #fc801a;
+    background: transparent;
+    color: #fc801a;
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.about-me-btn{
+    border: 1px solid  #fc801a;
+    background: transparent;
+    color: #fc801a;
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.contact-btn{
+    border: 1px solid  #fc801a;
+    background: transparent;
+    color: #fc801a;
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.glass-logo{
+    margin: 0% 0% 0% 0%;
+    position: absolute;
+    top: 15%;
+    right: -105%;
+    
+    width: 50%;
+    height: 60vh;
+    filter: drop-shadow(10px 10px 10px #ff4f30);
+    
+}
+
+.presentation{
+
+    height: 75%;
+    margin: 0 auto;
+    min-height: 40vh;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 50px;
+
+}
+.glass-layer{
+    display: none;
+    margin-top: 5%;
+    width: 100px;
+   
+}
+.introduction{
+    
+    flex: 1;
+
+}
+.contact{
+    
+    
+    align-items: center;
+    margin: 10% 0% 0% 0%;
+    
+    height: 15vh;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    
+}
+
+.contact h2{
+    
+    font-size: 25px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.contact p{
+    font-weight: 200;
+    margin-top: 13px;
+    font-size: 50px;
+    color:#fcfcfd;
+}
+.contact-form{
+    
+    margin-top: 25px;
+    
+    
+}
+.form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+
+}
+.form-control{
+    
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(255, 72, 72);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom: 16px;
+    
+}
+textarea{
+    resize: vertical;
+}
+
+.contact-form button{
+    
+    width: 88%;
+    background-color:rgba(95, 215, 236, 0.349);
+    border: none;
+    outline: none;
+    padding: 2px;
+    font-size: 15px;
+    border-radius: 8px;
+    color: rgb(105, 250, 100);
+    
+    cursor: pointer;
+    margin-top: 1px;
+    transition: .3s ease background-color;
+}
+.contact-form button:hover{
+    background-color: rgba(157, 250, 95, 0.452);
+}
+
+#status{
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
+
+}
+#status.success{
+    background-color: rgb(105, 250, 100);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(250, 110, 100);
+    color: white;
+    animation: status 0s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+
+/* this line and below is about responsivenees suffs*/
+
+@media screen and (max-width: 1440px){
+
+    
+    
+   
+    .glass-logo{
+        
+        height: 45vh;
+        
+    }
+    .contact{
+       
+        width: 400px;
+        height: 7vh;
+       
+        top: 5%;
+        left: 10%;
+        
+    }
+    .glass-layer{
+       
+        width: 35vw;
+        height: 82vh;
+        top: 0%;
+        left: 0%;
+        
+    }
+   
+    .contact h2{
+    
+        font-size: 17px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    
+    .contact p{
+        font-weight: 200;
+        margin-top: 13px;
+        font-size: 12px;
+        color:#fcfcfd;
+    }
+    .form{
+        margin-top: 1px;
+        transition: all 4s ease-in-out;
+    
+    }
+    .form-control{
+        width: 350px;
+       height: 5vh;
+        font-size: 10px;
+        margin-bottom: 15px;
+        
+    }
+    
+}
+@media screen and (max-width: 375px){
+    .background-img-container{
+       
+        background-size: cover;
+        
+        
+    }
+
+    .home-btn{
+   
+        border: none;
+       
+    }
+    
+    .about-me-btn{
+        border: none;
+        
+    }
+    .contact-btn{
+        border: none;
+       
+    }
+    .glass-logo{
+       display: none;
+    }
+
+    .contact{
+       
+        width: 250px;
+        top: 5%;
+        left: 0%;
+
+    }
+    .glass-layer{
+       
+        display: none;
+    }
+    
+    .form-control{
+        width: 300px;
+       height: 5vh;
+        left: 150%;
+        
+    }
+    .contact-form button{
+    
+        width: 300px;
+       
+    }
+    .presentation{
+
+        left: 30px;
+    
+    }
+
+}
